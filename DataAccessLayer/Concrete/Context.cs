@@ -12,7 +12,7 @@ namespace DataAccessLayer.Concrete
                 "server=localhost;database=PortfolioWebsite;integrated security=false;User=sa;Password=root.ROOT1");
         }
         public DbSet<About>  Abouts { get; set; }
-        public DbSet<Conctact>  Conctacts { get; set; }
+        public DbSet<Contact>  Contacts { get; set; }
         public DbSet<Feature>  Features { get; set; }
         public DbSet<Message>  Messages { get; set; }
         public DbSet<Portfolio>  Portfolios { get; set; }
@@ -20,5 +20,6 @@ namespace DataAccessLayer.Concrete
         public DbSet<Skill>  Skills { get; set; }
         public DbSet<SocialMedia>  SocialMedias { get; set; }
         public DbSet<Testimonial>  Testimonials { get; set; }
+        public DbSet<Experience>  Experiences { get; set; }
     }
 }

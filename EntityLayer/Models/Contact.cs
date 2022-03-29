@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace EntityLayer.Models
 {
-    public class Conctact
+    public class Contact
     {    [Key]
         public int ContactId { get; set; }
         public string Title { get; set; }
