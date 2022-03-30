@@ -38,5 +38,10 @@ namespace BusinessLayer.Concrete
         {
             return  _contactDalDal.GetById(id);
         }
+
+        public List<Contact> TGetListByFilter()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

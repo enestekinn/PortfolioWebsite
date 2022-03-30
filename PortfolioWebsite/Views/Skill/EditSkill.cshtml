@@ -1,0 +1,21 @@
+@model EntityLayer.Models.Skill
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_AdminLayout";
+}
+
+<div class="card-header border-0">
+    <h3 class="mb-0">Yetenek Duzenleme Sayfasi</h3>
+</div>
+@using (Html.BeginForm("EditSkill", "Skill", FormMethod.Post))
+{
+    @Html.HiddenFor(x => x.SkillId)
+    <br>
+    <label> Yetenek Basligi</label>
+    @Html.TextBoxFor(x => x.Title, new { @class = "form-control"})
+    <br/>
+    <label>Deger</label>
+    @Html.TextBoxFor(x => x.Value, new {@class = "form-control"})
+    <button class="btn btn-primary-success">Kaydet</button>   
+}

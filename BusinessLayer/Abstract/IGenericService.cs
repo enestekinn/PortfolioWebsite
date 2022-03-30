@@ -9,5 +9,6 @@ namespace BusinessLayer
         void TUpdate(T t);
         List<T> TGetList();
         T TGetById(int id);
+        List<T> TGetListByFilter();
     }
 }

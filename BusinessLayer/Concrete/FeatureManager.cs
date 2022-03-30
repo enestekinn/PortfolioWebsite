@@ -7,6 +7,7 @@ namespace BusinessLayer.Concrete
     public class FeatureManager : IGenericService<Feature>
     {
         private IFeatureDal _featureDal;
+        private IGenericService<Feature> _genericServiceImplementation;
 
         public FeatureManager(IFeatureDal featureDal)
         {
@@ -37,6 +38,11 @@ namespace BusinessLayer.Concrete
         public Feature TGetById(int id)
         {
             return _featureDal.GetById(id);
+        }
+
+        public List<Feature> TGetListByFilter()
+        {
+            throw new System.NotImplementedException();
         }
     }
 }
