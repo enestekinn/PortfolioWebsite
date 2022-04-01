@@ -34,6 +34,7 @@ namespace PortfolioWebsite.Areas.Writer.Controllers
 
             ViewBag.weatherDegree = weatherDegree;
             Context context = new Context();
+            ViewBag.messageCount = context.WriterMessages.Where(x => x.Receiver == values.Email).Count();
             ViewBag.announmentCount = context.Announcements.Count();
             ViewBag.users = context.Users.Count();
             ViewBag.skills = context.Skills.Count();

@@ -1,12 +1,15 @@
 using System.Threading.Tasks;
 using EntityLayer.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using PortfolioWebsite.Areas.Writer.Models;
 
 namespace PortfolioWebsite.Areas.Writer.Controllers
 {
+    [AllowAnonymous]
     [Area("Writer")]
+    [Route("Writer/[controller]/[action]")]
     public class LoginController : Controller
     {
         private readonly SignInManager<WriterUser> _signInManager;
@@ -39,9 +42,13 @@ namespace PortfolioWebsite.Areas.Writer.Controllers
             }
 
             return View();
-            {
-                
+            
             }
+
+        public async Task<IActionResult> Logout()
+        {
+            await _signInManager.SignOutAsync();
+            return RedirectToAction("Index", "Login");
         }
     }
 }

@@ -24,5 +24,6 @@ namespace DataAccessLayer.Concrete
         public DbSet<Experience> Experiences { get; set; }
         public  DbSet<Announcement> Announcements { get; set; }
         public DbSet<WriterMessage> WriterMessages { get; set; }
+        public DbSet<ToDoList> ToDoLists { get; set; }
     }
 }

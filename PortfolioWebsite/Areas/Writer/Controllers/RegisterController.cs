@@ -7,6 +7,7 @@ using PortfolioWebsite.Areas.Writer.Models;
 namespace PortfolioWebsite.Areas.Writer.Controllers
 {
     [Area("Writer")]
+    [Route("Writer/[controller]/[action]")]
     public class RegisterController : Controller
     {
 

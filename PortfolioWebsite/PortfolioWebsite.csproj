@@ -11,11 +11,10 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Areas\Writer\Pages" />
+      <Folder Include="Areas\Writer\Views\Shared\Components" />
       <Folder Include="Areas\Writer\Views\skydash\.git\objects\info" />
       <Folder Include="Areas\Writer\Views\skydash\.git\objects\pack" />
       <Folder Include="Areas\Writer\Views\skydash\.git\refs\tags" />
-      <Folder Include="Pages" />
       <Folder Include="wwwroot\userimage" />
       <Folder Include="wwwroot\skydash\.git\objects\info" />
       <Folder Include="wwwroot\skydash\.git\objects\pack" />
@@ -3317,6 +3316,10 @@
       <Content Include="wwwroot\skydash\.git\objects\fe\319d6a556f6614aee94a192b14d390ee565953" />
       <Content Include="wwwroot\skydash\.git\objects\fe\47f2d606fefc8d0c73d17ee8115eb683725c60" />
       <Content Include="wwwroot\skydash\.git\objects\fe\9c6764311361cba897e1cceb04ba009501057c" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Areas\Writer\Views\Shared\Notification\Default.cshtml" />
     </ItemGroup>
 
 </Project>

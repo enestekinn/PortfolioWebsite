@@ -2,10 +2,12 @@ using System;
 using BusinessLayer.Concrete;
 using DataAccessLayer.EntityFramework;
 using EntityLayer.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace PortfolioWebsite.Controllers
 {
+    [AllowAnonymous]
     public class DefaultController : Controller
     {
         // GET
